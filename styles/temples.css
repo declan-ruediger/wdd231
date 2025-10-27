@@ -1,0 +1,16 @@
+nav a.toggle-button {
+    flex-self: flex-end;
+}
+
+nav a.toggle-button:hover {
+    text-decoration: none;
+}
+
+div.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+div.card-container figure img {
+    width: 20em;
+}

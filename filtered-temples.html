@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="Temple Album site for WDD 131 - Dynamic Web Fundamentals. Coursework Website coded by Declan Paul Ruediger. This home page with link to the other pages in the project.">
+    <meta name="author" content="Declan Paul Ruediger">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Chewy&family=Fredoka&display=swap" rel="stylesheet">
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <span id="course-title">Temple Album</span>
+        <!-- <a class="toggle-button">X</a> -->
+        <nav id="nav-bar">
+            <a onclick="updateFilter(this)">Home</a>
+            <a onclick="updateFilter(this)">Old</a>
+            <a onclick="updateFilter(this)">New</a>
+            <a onclick="updateFilter(this)">Large</a>
+            <a onclick="updateFilter(this)">Small</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Temple Album</h1>
+        <div id="temples-container" class="card-container">
+            <figure>
+                <img src="images/smiling_rafter.webp" alt="">
+                <p>Brisbane Australia Temple</p>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Declan Paul Ruediger | Australia</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

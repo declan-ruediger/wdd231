@@ -95,7 +95,8 @@ function updateCourseCards(filtered_courses) {
 
 updateCourseCards(courses);
 
-function updateFilter(element) {
+function updateFilter(evt) {
+    let element = evt.currentTarget;
     let filter_name = element.textContent;
 
     let filter_lambda = (t) => {};
@@ -108,4 +109,8 @@ function updateFilter(element) {
     
     updateCourseCards(courses.filter(filter_lambda));
 }
+
+document.querySelectorAll("section.button-container button").forEach(button_element => {
+    button_element.addEventListener("click", updateFilter, false);
+})
 

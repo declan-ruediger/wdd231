@@ -57,7 +57,7 @@ if (true) {
 
 // on x click, close hamburger
 
-const temples = [
+const courses = [
     {
         templeName: "Aba Nigeria",
         location: "Aba, Nigeria",
@@ -140,7 +140,7 @@ const temples = [
     }
 ];
 
-function updateTempleCards(temples) {
+function updateCourseCards(temples) {
     document.getElementById("temples-container").innerHTML = "";
 
     temples.forEach(temple => {
@@ -155,7 +155,7 @@ function updateTempleCards(temples) {
     });
 }
 
-updateTempleCards(temples);
+updateCourseCards(courses);
 
 function updateFilter(element) {
     let filter_name = element.textContent;
@@ -182,5 +182,5 @@ function updateFilter(element) {
             TypeError();
     }
     
-    updateTempleCards(temples.filter(filter_lambda));
+    updateCourseCards(courses.filter(filter_lambda));
 }

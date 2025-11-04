@@ -162,7 +162,7 @@ main {
     flex-wrap: wrap;
 }
 
-section.card {
+.card {
     border: 1px solid var(--accent2-color);
     border-radius: 1em;
     background-color: whitesmoke;
@@ -177,17 +177,17 @@ section.card.right {
     flex: 1 10 10rem;
 }
 
-section.card h2 {
+.card h2 {
     margin-bottom: 0.5rem;
 }
 
-section.card img {
+.card img {
     height: auto;
     width: 100%;
     border-radius: 1rem;
 }
 
-section.card button {
+.card button {
     cursor: pointer;
     background: none;
     border: none;
@@ -196,7 +196,7 @@ section.card button {
     padding: 0.5rem;
 }
 
-section.box-list {
+.box-list {
     border: 1px solid var(--black);
     flex: 1 1 auto;
     text-align: center;
@@ -214,12 +214,13 @@ section.box-list {
             }
         }
 
-section.course-completed {
+.course-completed {
     animation: pulse 2s infinite;
 }
 
 .button-container {
     padding: 0;
+    margin: 0 0.5rem;
 }
 
 p.course-stats-text {

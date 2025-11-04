@@ -110,7 +110,7 @@ function updateFilter(evt) {
     updateCourseCards(courses.filter(filter_lambda));
 }
 
-document.querySelectorAll("section.button-container button").forEach(button_element => {
+document.querySelectorAll(".button-container button").forEach(button_element => {
     button_element.addEventListener("click", updateFilter, false);
 })
 

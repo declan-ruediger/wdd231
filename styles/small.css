@@ -149,7 +149,7 @@ span#course-title {
 }
 
 main {
-    padding: 1em auto;
+    padding: 0;
     margin: 0;
     display: grid;
     background-color: var(--isabelline);

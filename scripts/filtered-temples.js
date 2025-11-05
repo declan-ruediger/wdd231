@@ -140,7 +140,7 @@ const courses = [
     }
 ];
 
-function updateCourseCards(temples) {
+function displayProphets(temples) {
     document.getElementById("temples-container").innerHTML = "";
 
     temples.forEach(temple => {
@@ -155,7 +155,7 @@ function updateCourseCards(temples) {
     });
 }
 
-updateCourseCards(courses);
+displayProphets(courses);
 
 function updateFilter(element) {
     let filter_name = element.textContent;
@@ -182,5 +182,5 @@ function updateFilter(element) {
             TypeError();
     }
     
-    updateCourseCards(courses.filter(filter_lambda));
+    displayProphets(courses.filter(filter_lambda));
 }

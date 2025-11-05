@@ -1,0 +1,13 @@
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(3    00px, 1fr));
+
+    section {
+        border-radius: 1rem;
+        border: 1px solid var(--accent1-color)
+    }
+}
+
+img {
+    width: 100%;
+}

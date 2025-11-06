@@ -63,7 +63,7 @@ async function apiFetchForecast() {
 }
 
 function displayForecastResults(forecastData) {
-    forecastCard.innerHTML = `
+    let html = `
         <h2>Weather Forecast</h2>
         <div>`;
     
@@ -84,11 +84,13 @@ function displayForecastResults(forecastData) {
         }
 
         days.push(formatter(weather.dt));
-        forecastCard.innerHTML += `
+        html += `
             <p>${formatter(weather.dt)}: <strong>${weather.main.temp}°C</strong></p>
         `
     });
-    forecastCard.innerHTML += `</div>`;
+    html += `</div>`;
+
+    forecastCard.innerHTML = html;
     
 }
 

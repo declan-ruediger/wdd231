@@ -47,7 +47,7 @@ body {
     overflow:hidden;
 
     /* The image used */
-    background-image: url("/chamber/images/beachscape.webp");
+    background-image: url("../images/beachscape.webp");
 
     /* Add the blur effect */
     filter: blur(8px);

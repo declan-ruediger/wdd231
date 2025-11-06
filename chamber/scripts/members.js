@@ -47,7 +47,7 @@ const displayBusinesses = (members) => {
                     <p>${member.tagline}</p>
                 </div>
                 <div>
-                    <img src="images/members/${member.image}" alt="${member.name}">
+                    <img src="images/members/${member.image}" alt="${member.name} Logo">
                 </div>
                 <div>
                     <p><strong>EMAIL:</strong> ${member.email}</p>

@@ -52,7 +52,8 @@ const displayBusinesses = (members) => {
                 <div>
                     <p><strong>EMAIL:</strong> ${member.email}</p>
                     <p><strong>PHONE:</strong> ${member.phone_number}</p>
-                    <p><strong>URL:  </strong> ${member.website}</p>
+                    <p><strong>URL:  </strong> <a href="${member.website}">${member.website.substring(8)}</a></p>
+                    <p><strong>Membership Level:  </strong> ${member.membership_level == 1 ? "Gold" : member.membership_level == 2 ? "Silver" : "Bronze"}</p>
                 </div>
             `;
 

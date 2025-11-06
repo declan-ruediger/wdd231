@@ -243,6 +243,7 @@ main {
     flex-direction: row;
     width: 100%;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .card {
@@ -280,6 +281,10 @@ section.card.right {
     grid-column: span 2;
 }
 
+.card.weather > div > img {
+    background-color: var(--primary-color);
+}
+
 .card.weather > div > p {
     padding: 0.3rem 1rem;
     margin: 0;
@@ -299,11 +304,16 @@ section.card.right {
 
 .card.business {
     display: grid;
-    grid-template: auto 1fr / 5rem 3fr;
+    /* flex-wrap: wrap; */
+    grid-template: auto 1fr / 5rem 1fr;
     padding-left: 1rem;
     padding-right: 1rem;
     max-width: 30rem;
     flex: 2 10 10rem;
+}
+
+a {
+    color: inherit;
 }
 
 button {
@@ -338,6 +348,7 @@ button:hover {
     padding: 0;
     margin: 0.2rem 0;
     text-align: center;
+    max-width: none;
 }
 
 .list-view > .card.business > div:nth-child(1) > h3 {
@@ -349,6 +360,9 @@ button:hover {
 }
 
 .card.business > div > p {
+    /* font-size: smaller; */
+    overflow-wrap: break-word;
+    max-width: 40vw;
     padding: 0;
     margin: 0.5rem 1rem;
 }

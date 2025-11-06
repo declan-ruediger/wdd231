@@ -34,7 +34,7 @@ const displayProphets = (prophets) => {
         card.appendChild(placeOfBirth);
         card.appendChild(portrait);
 
-        cards.appendChild(card);
+        businessCards.appendChild(card);
     })
 }
 displayProphets(courses);

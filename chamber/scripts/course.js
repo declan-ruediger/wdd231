@@ -78,7 +78,7 @@ const courses = [
     }
 ]
 
-function displayProphets(filtered_courses) {
+function displayBusinesses(filtered_courses) {
     document.getElementById("courses-container").innerHTML = "";
 
     filtered_courses.forEach(course => {
@@ -93,7 +93,7 @@ function displayProphets(filtered_courses) {
     document.getElementById("credits-stat").innerHTML = `${total_credits}`;
 }
 
-displayProphets(courses);
+displayBusinesses(courses);
 
 function updateFilter(evt) {
     let element = evt.currentTarget;
@@ -107,7 +107,7 @@ function updateFilter(evt) {
         filter_lambda = (t) => t.subject == filter_name
     }
     
-    displayProphets(courses.filter(filter_lambda));
+    displayBusinesses(courses.filter(filter_lambda));
 }
 
 document.querySelectorAll(".button-container button").forEach(button_element => {

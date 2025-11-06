@@ -1,0 +1,106 @@
+:root {
+	--ecru: 			#bfb48fff;
+	--isabelline: 		#f2efe9ff;
+	--yinmn-blue: 		#4a5899ff;
+	--vista-blue: 		#9dacffff;
+	--black: 			#000501ff;
+
+	--polynesian-blue: 	#084887ff;
+	--moonstone: 		#74b4beff;
+	--redwood: 			rgb(110, 45, 49);
+
+	--primary-color: 	var(--polynesian-blue);
+	--secondary-color: 	var(--moonstone);
+	--accent1-color: 	var(--redwood);
+	--accent2-color: 	var(--black);
+
+    --light-font-color: var(--isabelline);
+
+	--heading-font: "Fredoka", system-ui;
+	--body-font: "Fredoka", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+	font-family: var(--body-font);
+	color: var(--accent1-color);
+}
+
+header, footer {
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+    font-size: 4em;
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: var(--light-font-color);
+    padding: 0.25em;
+}
+
+#small-pic {
+    margin: 0;
+    width: 100%;
+}
+
+main {
+    width: min(800px, 100%);
+    margin: 0 auto;
+}
+
+main h1 {
+    grid-column-end: span 2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--heading-font);
+	color: var(--primary-color);
+	text-align: center;
+}
+
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
+span#course-title {
+    display: block;
+}
+
+nav {
+    display: flex;
+    align-self: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    width: 100%;
+}
+
+nav a {
+    color: var(--light-font-color);
+    text-decoration: none;
+    margin: 10px 30px;
+    display: block;
+}
+
+nav a:hover {
+	text-decoration: underline;
+    /* transition: ; */
+}
+
+section.card {
+    border: 1px solid var(--accent2-color);
+    border-radius: 1em;
+}
+
+section.card img {
+    height: 150px;
+    width: auto;
+}

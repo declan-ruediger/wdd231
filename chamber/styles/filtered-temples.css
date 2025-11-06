@@ -1,0 +1,23 @@
+/* nav a.toggle-button {
+    flex-self: flex-end;
+} */
+
+nav a.toggle-button:hover {
+    text-decoration: none;
+}
+
+div.card-container {
+    display: grid;
+    --card-width: 15em;
+    grid-template-columns: repeat(auto-fit, minmax(var(--card-width), 1fr));
+}
+
+div.card-container figure {
+    width: var(--card-width);
+    margin: 1em;
+    padding: 1em;
+}
+
+div.card-container figure img {
+    width: 100%;
+}

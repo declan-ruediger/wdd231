@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Australia</title>
+    <meta name="description" content="Australia Place Page. WDD 131 - Dynamic Web Fundamentals. Coursework Website coded by Declan Paul Ruediger. This home page with link to the other pages in the project.">
+    <meta name="author" content="Declan Paul Ruediger">
+    <link rel="stylesheet" href="styles/place.css">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Chewy&family=Fredoka&display=swap" rel="stylesheet">
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        Australia
+    </header>
+    <main>
+        <img id="small-pic" srcset="images/australian-landscape.webp 2x"
+        sizes="(50em <= width <= 60em) 50em, (30em <= width < 50em) 30em, (width < 30em) 20em" alt="A young young smiling broadly with a helmet on for whitewater rafting, or a Panorama of Lake Moogerah in South-East Queensland, Australia. The landscape is vast and full of dry Australian brush.">
+        
+        <section>
+            <h2>Header</h2>
+            <table>
+                <tr>
+                    <td>Label:</td>
+                    <td>Value</td>
+                </tr>
+                <tr>
+                    <td>Label:</td>
+                    <td>Value</td>
+                </tr>
+                <tr>
+                    <td>Label:</td>
+                    <td>Value</td>
+                </tr>
+                <tr>
+                    <td>Label:</td>
+                    <td>Value</td>
+                </tr>
+                <tr>
+                    <td>Label:</td>
+                    <td>Value</td>
+                </tr>
+                <tr>
+                    <td>Label:</td>
+                    <td>Value</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2>Weather</h2>
+            <table>
+                <tr>
+                    <td>Label:</td>
+                    <td>Value</td>
+                </tr>
+                <tr>
+                    <td>Label:</td>
+                    <td>Value</td>
+                </tr>
+                <tr>
+                    <td>Label:</td>
+                    <td>Value</td>
+                </tr>
+                <tr>
+                    <td>Label:</td>
+                    <td>Value</td>
+                </tr>
+                <tr>
+                    <td>Label:</td>
+                    <td>Value</td>
+                </tr>
+                <tr>
+                    <td>Wind Chill:</td>
+                    <td id="wind-chill-value"></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Declan Paul Ruediger | Australia</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

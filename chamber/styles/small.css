@@ -7,10 +7,10 @@
 
 	--polynesian-blue: 	#084887ff;
 	--moonstone: 		#74b4beff;
-	--redwood: 			rgb(110, 45, 49);
+	--redwood: 			hsl(356, 42%, 25%);
 
 	--primary-color: 	var(--polynesian-blue);
-	--secondary-color: 	var(--ecru);
+	--secondary-color: 	hsl(46, 27%,80%);
 	--accent1-color: 	var(--redwood);
 	--accent2-color: 	var(--black);
 
@@ -209,7 +209,7 @@ nav ul li a {
     padding: 10px 30px;
     display: block;
     text-align: center;
-    background-color: var(--ecru);
+    background-color: var(--secondary-color);
     cursor: pointer;
 }
 
@@ -420,7 +420,7 @@ p.course-stats-text {
 }
 
 footer {
-    background-color: var(--ecru);
+    background-color: var(--secondary-color);
     color: var(--accent1-color);
     padding: 0.5em;
 }

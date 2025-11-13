@@ -331,6 +331,7 @@ button:hover {
 
 .list-view > .card.business {
     max-width: none;
+    grid-template: auto 1fr / 1fr;
 }
 
 .card.business > div:nth-child(1) {
@@ -353,32 +354,17 @@ button:hover {
 
 .list-view > .card.business > div:nth-child(1) > h3 {
     text-align: left;
-}
-
-.list-view > .card.business > div:nth-child(1) > p {
-    text-align: left;
-}
-
-.list-view > .card.business > div:nth-child(1) > p {
-    text-align: left;
-    display: inline;
-}
-
-.list-view > .card.business > div:nth-child(1) > h3 {
     display: inline;
     margin-right: 0.5em;
 }
 
-.list-view > .card.business > div:nth-child(2) {
-    display: none;
+.list-view > .card.business > div:nth-child(1) > p {
+    text-align: left;
+    display: inline;
 }
 
 .list-view > .card.business > div:nth-child(2) {
     display: none;
-}
-
-.list-view > .card.business {
-    grid-template: auto 1fr / 1fr;
 }
 
 .list-view > .card.business > div:nth-child(3) {

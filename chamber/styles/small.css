@@ -359,6 +359,38 @@ button:hover {
     text-align: left;
 }
 
+.list-view > .card.business > div:nth-child(1) > p {
+    text-align: left;
+    display: inline;
+}
+
+.list-view > .card.business > div:nth-child(1) > h3 {
+    display: inline;
+    margin-right: 0.5em;
+}
+
+.list-view > .card.business > div:nth-child(2) {
+    display: none;
+}
+
+.list-view > .card.business > div:nth-child(2) {
+    display: none;
+}
+
+.list-view > .card.business {
+    grid-template: auto 1fr / 1fr;
+}
+
+.list-view > .card.business > div:nth-child(3) {
+    display: grid;
+    grid-template: auto auto / 1fr 1fr;
+    row-gap: 0;
+}
+
+.list-view > .card.business > div:nth-child(3) > * {
+    margin: 0.1em;
+}
+
 .card.business > div > p {
     /* font-size: smaller; */
     overflow-wrap: break-word;
@@ -377,6 +409,8 @@ button:hover {
     height: auto;
     width: 100%;
     border-radius: 1rem;
+    /* border: 1px solid var(--accent1-color); */
+    /* box-shadow: 0 0 1em 0em hsl(0, 0%, 80%); */
 }
 
 .card button {

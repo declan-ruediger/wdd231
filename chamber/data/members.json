@@ -4,7 +4,7 @@
         "address": "1 Main Beach Parade, Main Beach, QLD 4217",
         "phone_number": "+61-7-5555-0101",
         "website": "https://goldcoastbeachrentals.com.au",
-        "image": "gold_coast_beach_rentals.png",
+        "image": "alissa.png",
         "membership_level": 2,
         "tagline": "Your gateway to sun-soaked holidays!",
         "email": "info@goldcoastbeachrentals.com.au"
@@ -14,7 +14,7 @@
         "address": "3400 Gold Coast Highway, Surfers Paradise, QLD 4217",
         "phone_number": "+61-7-5555-0202",
         "website": "https://surfnsunshop.com.au",
-        "image": "surf_n_sun_shop.png",
+        "image": "bakery.png",
         "membership_level": 3,
         "tagline": "Catch the perfect wave with us!",
         "email": "contact@surfnsunshop.com.au"
@@ -24,7 +24,7 @@
         "address": "45 Esplanade, Burleigh Heads, QLD 4220",
         "phone_number": "+61-7-5555-0303",
         "website": "https://tropicalbeachcafe.com.au",
-        "image": "tropical_beach_cafe.png",
+        "image": "happy.png",
         "membership_level": 1,
         "tagline": "Savor the flavors of paradise!",
         "email": "info@tropicalbeachcafe.com.au"
@@ -34,7 +34,7 @@
         "address": "2 Marine Parade, Southport, QLD 4215",
         "phone_number": "+61-7-5555-0404",
         "website": "https://goldcoastkayaking.com.au",
-        "image": "gold_coast_kayaking.png",
+        "image": "new-wave.png",
         "membership_level": 3,
         "tagline": "Explore the waters like never before!",
         "email": "bookings@goldcoastkayaking.com.au"
@@ -44,7 +44,7 @@
         "address": "123 Ocean Drive, Broadbeach, QLD 4218",
         "phone_number": "+61-7-5555-0505",
         "website": "https://sunshinesurfresort.com.au",
-        "image": "sunshine_surf_resort.png",
+        "image": "organic.png",
         "membership_level": 2,
         "tagline": "Relax and ride the waves in luxury!",
         "email": "info@sunshinesurfresort.com.au"
@@ -54,7 +54,7 @@
         "address": "678 Tallebudgera Creek Road, Tallebudgera, QLD 4228",
         "phone_number": "+61-7-5555-0606",
         "website": "https://seasidedayspa.com.au",
-        "image": "seaside_day_spa.png",
+        "image": "smile.png",
         "membership_level": 1,
         "tagline": "Unwind in nature's bliss!",
         "email": "relax@seasidedayspa.com.au"
@@ -64,7 +64,7 @@
         "address": "789 Coral Coast Drive, Gold Coast, QLD 4214",
         "phone_number": "+61-7-5555-0707",
         "website": "https://goldcoastislandtours.com.au",
-        "image": "gold_coast_island_tours.png",
+        "image": "urban.png",
         "membership_level": 3,
         "tagline": "Discover the hidden gems of the coast!",
         "email": "info@goldcoastislandtours.com.au"

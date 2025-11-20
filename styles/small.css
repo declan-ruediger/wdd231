@@ -84,6 +84,38 @@ header div img {
     content: "\00D7";
 }
 
+dialog {
+    max-width: 35em;
+
+    border: 1px solid var(--accent2-color);
+    border-radius: 1rem;
+    background-color: whitesmoke;
+    margin: auto;
+    padding: 1em;
+}
+
+dialog > button::before {
+    content: "\00D7";
+}
+
+dialog > button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color:rgba(0, 0, 0, 0);
+    border: none;
+    font-size: 1.75em;
+    padding: 0em;
+    padding-top: -1em;
+    margin: 0;
+    width: 1.75em;
+    height: 1.75em;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
 h1 {
     color: var(--accent1-color)
 }
@@ -218,9 +250,18 @@ section.card.right {
     animation: pulse 2s infinite;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .button-container {
     padding: 0;
     margin: 0 0.5rem;
+}
+
+.button-container.box-list {
+    padding: 0;
+    margin: 1em;
 }
 
 p.course-stats-text {

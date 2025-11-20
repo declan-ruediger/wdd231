@@ -78,14 +78,36 @@ const courses = [
     }
 ]
 
-function displayProphets(filtered_courses) {
-    document.getElementById("courses-container").innerHTML = "";
+const courseContainer = document.getElementById("courses-container");
+const courseModal = document.querySelector("#course-details");
+
+function openModal(course) {
+    courseModal.innerHTML = generateModalInnerHTML(course);
+    courseModal.showModal();
+    document.querySelector("#course-details > button").addEventListener('click', () => {
+        courseModal.close();
+    }); 
+}
+
+function displayCourses(filtered_courses) {
+    courseContainer.innerHTML = "";
 
     filtered_courses.forEach(course => {
-        document.getElementById("courses-container").innerHTML +=
-            `<section class="box-list ${course.completed ? "course-completed" : ""}">
-                ${course.subject}${course.number}
-            </section>`;
+        let courseCard = document.createElement("section");
+        courseCard.classList.add("button-container", "box-list");
+        if (course.completed) {
+            courseCard.classList.add("course-completed");
+        }
+
+        let courseCardButton = document.createElement("button")
+        courseCardButton.innerHTML = `${course.subject}${course.number}`;
+        courseCardButton.addEventListener("click", () => {
+            openModal(course);
+        }, false)
+        
+        courseCard.appendChild(courseCardButton);
+
+        courseContainer.appendChild(courseCard);
     });
 
     let total_credits = filtered_courses.reduce((acc, current) => acc + current.credits, initalValue = 0)
@@ -93,7 +115,7 @@ function displayProphets(filtered_courses) {
     document.getElementById("credits-stat").innerHTML = `${total_credits}`;
 }
 
-displayProphets(courses);
+displayCourses(courses);
 
 function updateFilter(evt) {
     let element = evt.currentTarget;
@@ -107,10 +129,21 @@ function updateFilter(evt) {
         filter_lambda = (t) => t.subject == filter_name
     }
     
-    displayProphets(courses.filter(filter_lambda));
+    displayCourses(courses.filter(filter_lambda));
 }
 
-document.querySelectorAll(".button-container button").forEach(button_element => {
+document.querySelectorAll("#course-filter-buttons > .button-container > button").forEach(button_element => {
     button_element.addEventListener("click", updateFilter, false);
 })
 
+function generateModalInnerHTML(course) {
+    return `
+        <button></button>
+        <h3>${course.subject}${course.number}</h3>
+        <p>${course.title}</p>
+        <p>${course.credits} credits</p>
+        <p>Certificate: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p>Technology: ${course.technology.join(", ")}</p>
+        `;
+}

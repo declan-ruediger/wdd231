@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        50% {
+            transform: rotate(180deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes grow {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.5);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    @keyframes grow-big {
+        0% {
+            transform: scale(0);
+        }
+
+        100% {
+            transform: scale(2);
+        }
+    }
+
+    #loader {
+        --width: 100px;
+        --border-width: 10px;
+        width:  var(--width);
+        height: var(--width);
+        /* height: calc(var(--width) - var(--border-width)*2); */
+        background-color: white;
+        border-radius: var(--width);
+        box-shadow: 0 0 20px 0px purple;
+        border: var(--border-width) solid grey;
+        border-right: var(--border-width) solid white;
+        border-left:  var(--border-width) solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+
+        /* animation: spin 1.5s linear infinite; */
+        transition: transform linear 2s;
+
+
+        span {
+            transition: transform linear 2s;
+            transform: scale(0);
+        }
+    }
+
+    #loader:hover {
+        transform: rotate(360deg);
+
+        span {
+            transform: scale(3);
+        }
+    }
+</style>
+<body>
+    <div id="loader">
+        <span>⚙️</span>
+    </div>
+</body>
+</html>

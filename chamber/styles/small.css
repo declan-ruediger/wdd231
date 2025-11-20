@@ -161,11 +161,10 @@ header div img {
 .theme-toggle::before {
     content: "\2600";
 }
+
 .theme-toggle.dark::before {
     content: "\263E";
 }
-
-
 
 h1 {
     color: var(--accent1-color)

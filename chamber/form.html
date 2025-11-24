@@ -25,9 +25,9 @@
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/membership-levels-info,js" defer></script>
 
 </head>
-
 <body>
     <div class="bg-image"></div>
     <header>
@@ -48,6 +48,153 @@
     </header>
     <main>
         <h1>Join</h1>
+        <div class="flex">
+            <section class="card left">
+                <form action="thankyou.html">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th><label for="first_name">First Name</label></th>
+                                <td><input type="text" required id="first_name" name="first_name" autocomplete="given-name"></td>
+                            </tr>
+                            <tr>
+                                <th><label for="last_name">Last Name</label></th>
+                                <td><input type="text" required id="last_name" name="last_name" autocomplete="family-name"></td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="organizational_title">
+                                        Organizational Title
+                                    </label>
+                                </th>
+                                <td>
+                                    <input
+                                        type="text"
+                                        id="organizational_title"
+                                        name="organizational_title"
+                                        autocomplete="organization-title"
+                                        pattern="[\w\- ]{7,}"
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="email_address">
+                                        Email Address
+                                    </label>
+                                </th>
+                                <td>
+                                    <input
+                                        type="email"
+                                        required
+                                        id="email_address"
+                                        name="email_address"
+                                        autocomplete="email"
+                                        placeholder="john@example.com"
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="mobile_phone_number">
+                                        Mobile
+                                    </label>
+                                </th>
+                                <td>
+                                    <input
+                                        type="tel"
+                                        required
+                                        id="mobile_phone_number"
+                                        name="mobile_phone_number"
+                                        autocomplete="tel"
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="business_name">
+                                        Business / Organization Name
+                                    </label>
+                                </th>
+                                <td>
+                                    <input
+                                        type="text"
+                                        required
+                                        id="business_name"
+                                        name="business_name"
+                                        autocomplete="organization"
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="membership_level">
+                                        Membership Level
+                                    </label>
+                                </th>
+                                <td>
+                                    <select
+                                        required
+                                        id="membership_level"
+                                        name="membership_level"
+                                    >
+                                        <option value="np">NP Membership</option>
+                                        <option value="bronze">Bronze Membership</option>
+                                        <option value="silver">Silver Membership</option>
+                                        <option value="gold">Gold Membership</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="business_description">
+                                        Business / Organization Description
+                                    </label>
+                                </th>
+                                <td>
+                                    <textarea
+                                        id="business_description"
+                                        name="business_description"
+                                    ></textarea>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <input
+                        type="hidden"
+                        name="timestamp"
+                        id="timestamp"
+                    >
+                    <div class="flex">
+                        <input
+                            type="submit"
+                            value="Join"
+                        >
+                    </div>
+                </form>
+            </section>
+            <section class="card right">
+                <div class = "flex" id="membership-levels-container">
+                    <section class="membership card">
+                        <h3>NP Membership</h3>
+                        <div class="flex"><button>more info</button></div>
+                    </section>
+                    <section class="card">
+                        <h3>NP Membership</h3>
+                        <button>more info</button>
+                    </section>
+                    <section class="card">
+                        <h3>NP Membership</h3>
+                        <button>more info</button>
+                    </section>
+                    <section class="card">
+                        <h3>NP Membership</h3>
+                        <button>more info</button>
+                    </section>
+                </div>
+            </section>
+        </div>
+        <dialog id="membership-levels-modal"></dialog>
     </main>
     <footer>
         <div class="flex">

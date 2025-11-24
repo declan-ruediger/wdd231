@@ -23,6 +23,9 @@ outputBox.innerHTML = `
             <tr>    
                 <td>Membership Level</td><td>${params.get('membership_level').toUpperCase()}</td>                
             </tr>
+            <tr>    
+                <td>Timestamp</td><td>${params.get('timestamp').toUpperCase()}</td>                
+            </tr>
         </tbody>
     </table>
 `;

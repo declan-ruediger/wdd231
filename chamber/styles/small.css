@@ -252,6 +252,60 @@ main {
     flex: 1 1 auto;
 }
 
+#welcome-message {
+    font-size: x-large;
+    text-align: center;
+}
+
+.discover-grid {
+    display: grid;
+    gap: 1em;
+    padding: 1em;
+}
+
+.discover-grid > div {
+    border: 1px solid var(--accent2-color);
+    border-radius: 1rem;
+    background-color: whitesmoke;
+    overflow: hidden;
+    /* margin: 1em; */
+
+    
+    
+    display: grid;
+    grid-template-areas:
+        "image"
+        "header"
+        "description"
+        "address"
+        "learn-more";
+}
+
+.discover-grid > div > figure {
+    grid-area: image;
+}
+
+.discover-grid > div > h2 {
+    grid-area: header;
+    margin: 0.5em;
+}
+
+.discover-grid > div > address {
+    grid-area: address;
+    margin: 0.5em;
+    text-align: center;
+}
+
+.discover-grid > div > p {
+    grid-area: description;
+    margin: 0.5em;
+}
+
+.discover-grid > div > button {
+    grid-area: learn-more;
+    margin: 0.5em;
+}
+
 section.card.left {
     flex: 3 10 20rem;
 }
@@ -439,6 +493,7 @@ button {
     border-radius: 1rem;
     border: 1px solid var(--accent1-color);
     color: var(--accent1-color);
+    cursor: pointer;
 }
 
 button:hover {

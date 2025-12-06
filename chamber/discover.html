@@ -16,6 +16,7 @@
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
 
 	<!-- Google Fonts -->
@@ -25,9 +26,7 @@
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/membership-levels-info.js" defer></script>
-    <script src="scripts/setup-form.js" defer></script>
-
+    <script src="scripts/discover.js" type="module" defer></script>
 </head>
 <body>
     <div class="bg-image"></div>
@@ -42,13 +41,30 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li class="active"><a href="#">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li class="active"><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Join</h1>
+        <h1>Discover</h1>
+        <p id="welcome-message">Welcome! Let us know if you have any questions.</p>
+        <div id="discover-grid" class="discover-grid">
+            <div>
+                <h2>Surfers Paradise</h2>
+                <figure><img src="images/places/surfers_paradise.webp"></figure>
+                <address>1 Bing Bong Rd, Troopora QLD 3444</address>
+                <p>meow meow meow</p>
+                <button>Learn More</button>
+            </div>
+            <div>
+                <h2>Surfers Paradise</h2>
+                <figure><img src="images/places/surfers_paradise.webp"></figure>
+                <address>1 Bing Bong Rd, Troopora QLD 3444</address>
+                <p>meow meow meow</p>
+                <button>Learn More</button>
+            </div>
+        </div>
         <div class="flex">
             <section class="card left">
                 <form action="thankyou.html" method="get">

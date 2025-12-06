@@ -1,0 +1,16 @@
+@media only screen and (min-width: 30rem) {
+    .discover-grid > div {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "image header"
+            "image description"
+            "image description"
+            "image description"
+            "image address"
+            "image learn-more";
+    }
+
+    .discover-grid > div > figure > img {
+        border-radius: 0 0 1em 0;
+    }
+}

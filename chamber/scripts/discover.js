@@ -9,7 +9,7 @@ places.forEach(place => {
 
     placeElement.innerHTML = `
         <h2>${place.name}</h2>
-        <figure><img src="images/places/${place.imageUrl}"></figure>
+        <figure><img src="images/places/${place.imageUrl}" alt="${place.name}"></figure>
         <address>${place.address}</address>
         <p>${place.description}</p>
         <button>Learn More</button>

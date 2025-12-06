@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join | Gold Coast Chamber of Commerce</title>
+    <title>Discover | Gold Coast Chamber of Commerce</title>
     <meta name="description" content="A place for Gold Coast businesses to connect! (Coursework Website coded by Declan Paul Ruediger)">
     <meta name="author" content="Declan Paul Ruediger">
     <link rel="icon" href="favicon.ico">
@@ -26,7 +26,7 @@
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/discover.js" type="module" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
 </head>
 <body>
     <div class="bg-image"></div>
@@ -50,168 +50,7 @@
         <h1>Discover</h1>
         <p id="welcome-message">Welcome! Let us know if you have any questions.</p>
         <div id="discover-grid" class="discover-grid">
-            <div>
-                <h2>Surfers Paradise</h2>
-                <figure><img src="images/places/surfers_paradise.webp"></figure>
-                <address>1 Bing Bong Rd, Troopora QLD 3444</address>
-                <p>meow meow meow</p>
-                <button>Learn More</button>
-            </div>
-            <div>
-                <h2>Surfers Paradise</h2>
-                <figure><img src="images/places/surfers_paradise.webp"></figure>
-                <address>1 Bing Bong Rd, Troopora QLD 3444</address>
-                <p>meow meow meow</p>
-                <button>Learn More</button>
-            </div>
         </div>
-        <div class="flex">
-            <section class="card left">
-                <form action="thankyou.html" method="get">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <th><label for="first_name">First Name</label></th>
-                                <td><input type="text" required id="first_name" name="first_name" autocomplete="given-name"></td>
-                            </tr>
-                            <tr>
-                                <th><label for="last_name">Last Name</label></th>
-                                <td><input type="text" required id="last_name" name="last_name" autocomplete="family-name"></td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <label for="organizational_title">
-                                        Organizational Title
-                                    </label>
-                                </th>
-                                <td>
-                                    <input
-                                        type="text"
-                                        id="organizational_title"
-                                        name="organizational_title"
-                                        autocomplete="organization-title"
-                                        pattern="[\w\- ]{7,}"
-                                    >
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <label for="email_address">
-                                        Email Address
-                                    </label>
-                                </th>
-                                <td>
-                                    <input
-                                        type="email"
-                                        required
-                                        id="email_address"
-                                        name="email_address"
-                                        autocomplete="email"
-                                        placeholder="john@example.com"
-                                    >
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <label for="mobile_phone_number">
-                                        Mobile
-                                    </label>
-                                </th>
-                                <td>
-                                    <input
-                                        type="tel"
-                                        required
-                                        id="mobile_phone_number"
-                                        name="mobile_phone_number"
-                                        autocomplete="tel"
-                                    >
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <label for="business_name">
-                                        Business / Organization Name
-                                    </label>
-                                </th>
-                                <td>
-                                    <input
-                                        type="text"
-                                        required
-                                        id="business_name"
-                                        name="business_name"
-                                        autocomplete="organization"
-                                    >
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <label for="membership_level">
-                                        Membership Level
-                                    </label>
-                                </th>
-                                <td>
-                                    <select
-                                        required
-                                        id="membership_level"
-                                        name="membership_level"
-                                    >
-                                        <option value="np">NP Membership</option>
-                                        <option value="bronze">Bronze Membership</option>
-                                        <option value="silver">Silver Membership</option>
-                                        <option value="gold">Gold Membership</option>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <label for="business_description">
-                                        Business / Organization Description
-                                    </label>
-                                </th>
-                                <td>
-                                    <textarea
-                                        id="business_description"
-                                        name="business_description"
-                                    ></textarea>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <input
-                        type="hidden"
-                        name="timestamp"
-                        id="timestamp"
-                    >
-                    <div class="flex">
-                        <input
-                            type="submit"
-                            value="Join"
-                        >
-                    </div>
-                </form>
-            </section>
-            <section class="card right">
-                <div class = "flex" id="membership-levels-container">
-                    <section class="membership card">
-                        <h3>NP Membership</h3>
-                        <div class="flex"><button>more info</button></div>
-                    </section>
-                    <section class="card">
-                        <h3>NP Membership</h3>
-                        <button>more info</button>
-                    </section>
-                    <section class="card">
-                        <h3>NP Membership</h3>
-                        <button>more info</button>
-                    </section>
-                    <section class="card">
-                        <h3>NP Membership</h3>
-                        <button>more info</button>
-                    </section>
-                </div>
-            </section>
-        </div>
-        <dialog id="membership-levels-modal"></dialog>
     </main>
     <footer>
         <div class="flex">

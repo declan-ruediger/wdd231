@@ -1,0 +1,43 @@
+@media only screen and (min-width: 38rem) {
+
+    header, main, nav, footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    header div {
+        grid-template-columns: 24px auto 44px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    nav.navigation {
+        display: block;
+    }
+
+    .discover-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .discover-grid > div {
+        grid-template-columns: none;
+        grid-template-areas:
+            "image"
+            "header"
+            "description"
+            "address"
+            "learn-more";
+    }
+
+    .discover-grid > div > figure > img {
+        border-radius: 0;
+    }
+}
+
+/* @media only screen and (min-width: 901px) {
+    footer {
+        border-radius: 0 0 1rem 1rem;
+    }
+} */

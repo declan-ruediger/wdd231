@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | Gold Coast Chamber of Commerce</title>
+    <meta name="description" content="A place for Gold Coast businesses to connect! (Coursework Website coded by Declan Paul Ruediger)">
+    <meta name="author" content="Declan Paul Ruediger">
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Join | Gold Coast Chamber of Commerce">
+    <meta property="og:description" content="A place for Gold Coast businesses to connect! (Coursework Website coded by Declan Paul Ruediger)">
+    <meta property="og:image" content="https://declan-ruediger.github.io/wdd231/chamber/images/beachscape.webp">
+    <meta property="og:url" content="https://declan-ruediger.github.io/wdd231/chamber/form.html">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Chewy&family=Fredoka&display=swap" rel="stylesheet">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/membership-levels-info.js" defer></script>
+    <script src="scripts/setup-form.js" defer></script>
+
+</head>
+<body>
+    <div class="bg-image"></div>
+    <header>
+        <div>
+            <img src="images/logo.svg" alt="site logo" width="1" height="1">
+            <span>Gold Coast Chamber of Commerce</span>
+            <button id="theme-button" class="theme-toggle" aria-label="theme"></button>
+            <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+        </div>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="active"><a href="#">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Join</h1>
+        <div class="flex">
+            <section class="card left">
+                <form action="thankyou.html" method="get">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th><label for="first_name">First Name</label></th>
+                                <td><input type="text" required id="first_name" name="first_name" autocomplete="given-name"></td>
+                            </tr>
+                            <tr>
+                                <th><label for="last_name">Last Name</label></th>
+                                <td><input type="text" required id="last_name" name="last_name" autocomplete="family-name"></td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="organizational_title">
+                                        Organizational Title
+                                    </label>
+                                </th>
+                                <td>
+                                    <input
+                                        type="text"
+                                        id="organizational_title"
+                                        name="organizational_title"
+                                        autocomplete="organization-title"
+                                        pattern="[\w\- ]{7,}"
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="email_address">
+                                        Email Address
+                                    </label>
+                                </th>
+                                <td>
+                                    <input
+                                        type="email"
+                                        required
+                                        id="email_address"
+                                        name="email_address"
+                                        autocomplete="email"
+                                        placeholder="john@example.com"
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="mobile_phone_number">
+                                        Mobile
+                                    </label>
+                                </th>
+                                <td>
+                                    <input
+                                        type="tel"
+                                        required
+                                        id="mobile_phone_number"
+                                        name="mobile_phone_number"
+                                        autocomplete="tel"
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="business_name">
+                                        Business / Organization Name
+                                    </label>
+                                </th>
+                                <td>
+                                    <input
+                                        type="text"
+                                        required
+                                        id="business_name"
+                                        name="business_name"
+                                        autocomplete="organization"
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="membership_level">
+                                        Membership Level
+                                    </label>
+                                </th>
+                                <td>
+                                    <select
+                                        required
+                                        id="membership_level"
+                                        name="membership_level"
+                                    >
+                                        <option value="np">NP Membership</option>
+                                        <option value="bronze">Bronze Membership</option>
+                                        <option value="silver">Silver Membership</option>
+                                        <option value="gold">Gold Membership</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="business_description">
+                                        Business / Organization Description
+                                    </label>
+                                </th>
+                                <td>
+                                    <textarea
+                                        id="business_description"
+                                        name="business_description"
+                                    ></textarea>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <input
+                        type="hidden"
+                        name="timestamp"
+                        id="timestamp"
+                    >
+                    <div class="flex">
+                        <input
+                            type="submit"
+                            value="Join"
+                        >
+                    </div>
+                </form>
+            </section>
+            <section class="card right">
+                <div class = "flex" id="membership-levels-container">
+                    <section class="membership card">
+                        <h3>NP Membership</h3>
+                        <div class="flex"><button>more info</button></div>
+                    </section>
+                    <section class="card">
+                        <h3>NP Membership</h3>
+                        <button>more info</button>
+                    </section>
+                    <section class="card">
+                        <h3>NP Membership</h3>
+                        <button>more info</button>
+                    </section>
+                    <section class="card">
+                        <h3>NP Membership</h3>
+                        <button>more info</button>
+                    </section>
+                </div>
+            </section>
+        </div>
+        <dialog id="membership-levels-modal"></dialog>
+    </main>
+    <footer>
+        <div class="flex">
+            <div>
+                <p><strong>Gold Coast Chamber of Commerce</strong></p>
+                <p>10 Rue De La Paix</p>
+                <p>Timbuktu, Mali 999 </p>
+                <p>info@timbuktucc.org</p>
+                <p>(223) 555-2300</p>
+            </div>
+            <span class="social-media">
+                <a href="https://aussie.zone/u/declanruediger"><img src="images/logos/lemmy.svg" alt="Lemmy Logo"></a>
+                <a href="https://github.com/declan-ruediger"><img src="images/logos/github.svg" alt="Github Logo"></a>
+                <a href="https://www.linkedin.com/in/declanruediger"><img src="images/logos/linkedin.svg" alt="LinkedIn Logo"></a>
+            </span>
+            <div>
+                <p>WDD231 Class Project</p>
+                <p>Declan Paul Ruediger</p>
+                <p>&copy;<span id="currentyear"></span> Gold Coast Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

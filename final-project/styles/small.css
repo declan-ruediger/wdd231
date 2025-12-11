@@ -47,7 +47,7 @@ body {
     overflow:hidden;
 
     /* The image used */
-    background-image: url("../images/earth-overview.webp");
+    background-image: url("https://declan-ruediger.github.io/wdd231/final-project/images/earth-overview.webp");
 
     /* Add the blur effect */
     filter: blur(8px);

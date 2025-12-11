@@ -1,16 +1,16 @@
 :root {
-	--ecru: 			#bfb48fff;
+	--ecru: 			rgb(157, 191, 143);
 	--isabelline: 		#f2efe9ff;
-	--yinmn-blue: 		#4a5899ff;
+	--yinmn-blue: 		rgb(153, 74, 74);
 	--vista-blue: 		#9dacffff;
 	--black: 			#000501ff;
 
-	--polynesian-blue: 	#084887ff;
+	--polynesian-blue: 	rgb(135, 8, 16);
 	--moonstone: 		#74b4beff;
-	--redwood: 			hsl(356, 42%, 25%);
+	--redwood: 			hsl(236, 42%, 25%);
 
 	--primary-color: 	var(--polynesian-blue);
-	--secondary-color: 	hsl(46, 27%,80%);
+	--secondary-color: 	hsl(84, 27%, 80%);
 	--accent1-color: 	var(--redwood);
 	--accent2-color: 	var(--black);
 
